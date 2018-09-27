@@ -29,17 +29,17 @@ spring:
     sampler:
       percentage: 1
   datasource:
-    url: jdbc:mysql://cola-mysql:3306/cola-cloud?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
-    username: ${MYSQL_SERVER_USERNAME}
-    password: ${MYSQL_SERVER_PASSWORD}
+    url: jdbc:mysql://101.132.74.104:3306/cola-cloud?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: 'ABC456lxl:'
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
     db-name: cola-cloud
   redis:
-    host: cola-redis
+    host: 101.132.74.104
     port: 6379
-    username: ${REDIS_SERVER_USERNAME:}
-    password: ${REDIS_SERVER_PASSWORD:}
+#    username:
+    password: 123456
     database: 8
     timeout: 0
     pool:
